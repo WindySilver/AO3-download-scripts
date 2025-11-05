@@ -1,7 +1,7 @@
 # AO3Downloader
-My Bash scripts for downloading stories from AO3
+My Bash scripts for downloading stories from AO3 in all the available formats (at the time of writing .azw3, .epub, .mobi, .pdf and .html)
 
-ao3download.sh runs with *bash ao3download.sh filenamewithoutspaces AO3URL*
+ao3download.sh runs with *bash ao3download.sh filenamewithoutspaces URLTOAO3STORY*
 
 I have found that the filename does not matter, although with previous iterations of the script I was unable to get the spaces to work. The URL can be either HTTPS (from the website) or HTTP (from the email notifications) as long as it does not have the chapter part in it (that is, the URL must end with *works/ID* instead of *works/ID/chapters/CHAPTERID*). Failing to strip the chapter part beforehand will lead to the script trying to download the work the ID of which corresponds with the chapter's ID.
 
