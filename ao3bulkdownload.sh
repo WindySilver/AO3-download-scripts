@@ -6,7 +6,7 @@ echo "Starting download batch."
 cat AO3URLs.txt | while read line
 do
    echo "Starting the download of story $a."
-   bash ao3download.sh $a $line
+   bash ao3download.sh $a $line $1
    echo "Story $a downloaded. Sleeping."
    ((a=$a+1))
    sleep 15
